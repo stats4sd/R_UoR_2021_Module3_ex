@@ -39,11 +39,11 @@ question("What dplyr function is used to create or modify columns of a dataset?"
 *Question 2*
 
 ```{r Q2, echo=FALSE}
-question("Which dplyr functions could be responsible for having an output with fewer columns than the original dataset? (select ALL that apply)",
-  answer("select()", message="select() is correct, but there is another one", correct = TRUE),
+question("Which two dplyr functions could be responsible for having an output with fewer columns than the original dataset? (select ALL that apply)",
+  answer("select()", correct = TRUE),
   answer("filter()", message="with filter it's the number of rows that gets reduced"),
   answer("arrange()", message="arrange does not affect the number of rows or columns"),
-  answer("summarise()", message="summarise() is correct, but there is another one", correct = TRUE),
+  answer("summarise()", correct = TRUE),
   answer("mutate()", message="mutate can only increase the number of columns"),
   answer("group_by()", message="group_by does not affect the number of rows or columns"), allow_retry = TRUE,random_answer_order = TRUE
 )
