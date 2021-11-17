@@ -324,7 +324,7 @@ DT::datatable(imdb[sample(1:31529,50),])
 
 ```
 
-For the rest of this workbook, we limited the number of lines of each output to 50 as well. So in some cases the output may be longer than what is being displayed. We figured that you and our server wouldn't mind not having the 30,000 rows of data outputted each time you try a new command or made a mistake!
+For the rest of this workbook, we limited the number of lines of each output to 1000 as well. So in some cases the output may be longer than what is being displayed. We figured that you and our server wouldn't mind not having the 30,000 rows of data outputted each time you try a new command or made a mistake!
 
 ## Appendix: Useful reference links  
 
