@@ -171,7 +171,7 @@ imdb %>%
 -->
 
 
-**Exercise 4. Produce a list of titles which are shared across four or more different entry in the data. Order this list so that the most common title appears at the top**
+**Exercise 4. Produce a list of titles which are shared across four or more different entries in the data. Order this list so that the most common title appears at the top**
 
 ```{r ex4,exercise=TRUE}
 
