@@ -190,7 +190,7 @@ imdb %>%
 
 
 
-**Exercise 5a. What are the minimum, average and maximum age of a movie director releasing a movie in the imdb dataset? (you will need to add `na.rm=T` in your summary functions to deal with the entries where the year of birth of the director is missing)**
+**Exercise 5. What are the minimum, average and maximum age of a movie director releasing a movie in the imdb dataset? (you will need to add `na.rm=T` in your summary functions to deal with the entries where the year of birth of the director is missing)**
 
 ```{r ex5,exercise=TRUE}
 
@@ -203,24 +203,6 @@ imdb %>%
     filter(type=="movie") %>%
       summarise(minAge=min(age, na.rm=T), meanAge=mean(age, na.rm=T), maxAge=max(age, na.rm=T))
 
-```
--->
-
-**Exercise 5b. Which director had the longest period of time between their first released movie and their final released movie**
-
-```{r ex5b,exercise=TRUE}
-
-```
-
-<!--
-```{r ex5b-solution}
-imdb %>%
-    filter(type=="movie") %>%
-     group_by(director) %>%
-      summarise(first_film=min(year), last_film=max(year)) %>%
-       mutate(range=last_film-first_film) %>%
-        filter(range==max(range))
-        
 ```
 -->
 
